@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class LoginConfiguration implements WebMvcConfigurer {
 
     /**
-     * 将自定义的拦截器添加到springboot中
+     * 添加自定义的拦截器
      * @param registry
      */
     @Override
@@ -18,4 +18,5 @@ public class LoginConfiguration implements WebMvcConfigurer {
                 .addPathPatterns("/**")//需要拦截的路径
                 .excludePathPatterns();//不需要拦截的路径，如index.html,login.html,register.html
     }
+
 }
